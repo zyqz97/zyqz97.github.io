@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>GP-NeRF</title>
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>GP-NeRF</b>: Efficient Large-scale Scene Representation with <br> a Hybrid of High-resolution <b>Grid</b> and <b>Plane</b> Features</br> 
+                <small>
+                    arxiv pre-print
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                          Yuqi Zhang
+                    </li>
+                    <li>
+                        <a href="https://guanyingc.github.io/">
+                            Guanying Chen
+                        </a>
+                    </li>
+                    <li>
+                          Shuguang Cui
+                    </li>
+                    <br>
+                    <li>
+                        <small>
+                            <sup></sup>Fnii and SSE, The Chinese University of Hong Kong, Shenzhen
+                        </small>
+                    </li><br>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2303.03003">
+                            <image src="icons/paper.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/8UBV5X_qOX8">
+                            <image src="icons/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zyqz97/GP-NeRF">
+                            <image src="icons/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://drive.google.com/file/d/1TdRiSGr-eRhNIwP7LbEzOWFMKlwU_-Qf/view">
+                            <image src="icons/paper.png" height="60px">
+                                <h4><strong>Supplementary</strong></h4>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <image src="img/teaser.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    Existing neural radiance fields (NeRF) methods for large-scale scene modeling require days of training using multiple GPUs, hindering their applications in scenarios with limited computing resources. Despite fast optimization NeRF variants have been proposed based on the explicit dense or hash grid features, their effectivenesses are mainly demonstrated in object-scale scene representation. In this paper, we point out that the low feature resolution in explicit representation is the bottleneck for large-scale unbounded scene representation. 
+                    To address this problem, we introduce a new and efficient hybrid feature representation for NeRF that fuses the 3D hash-grids and high-resolution 2D dense plane features. 
+                    Compared with the dense-grid representation, the resolution of a dense 2D plane can be scaled up more efficiently. 
+                    Based on this hybrid representation, we propose a fast optimization NeRF variant, called GP-NeRF, that achieves better rendering results while maintaining a compact model size. 
+                    Extensive experiments on multiple large-scale unbounded scene datasets show that our model can converge in 1.5 hours using a single GPU while achieving results comparable to or even better than the existing method that requires about one day's training with 8 GPUs.
+                </p>
+            </div>
+        </div>
+
+        
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/8UBV5X_qOX8" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Methodology
+                </h3>
+                <p class="text-justify">
+                    First, we sample 3D points along the rays emitted from pixels. Second, we parameterize the space into a contracted space for a compact space parameterization. 
+                    Then, querying the position into the proposed hybrid-representation to extract hashg-rid feature and multi-resolution plane features, which are fed into
+                    a light-weight MLP to predict the sigma and the color values (color MLP requires the additional view directions, appearance embeddings, and plane feature input). 
+                    Finally, the image colors can be computed by volume rendering.
+                </p><br>
+                <image src="./img/pipeline.png" class="img-responsive" alt="method"><br>
+                
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
