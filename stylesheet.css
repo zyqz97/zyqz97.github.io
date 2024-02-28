@@ -1,0 +1,285 @@
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAUi-qNiXg7eU0.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v15/S6u8w4BMUTPHjxsAXC-qNiXg7Q.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_FQftx9897sxZ.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v15/S6u_w4BMUTPHjxsI5wq_Gwftx9897g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjxAwXiWtFCfQ7A.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v15/S6uyw4BMUTPHjx4wXiWtFCc.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwaPGQ3q5d0N7w.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v15/S6u9w4BMUTPHh6UVSwiPGQ3q5d0.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: #f09228;
+  text-decoration: none;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px
+}
+
+strong {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+heading {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 22px;
+}
+
+heading a {
+  font-size: inherit;
+  /* Add any other styles you want for the link, e.g., color, text-decoration, etc. */
+}
+
+heading2 {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+papertitle {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700
+}
+
+name {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 32px;
+}
+
+name a {
+  font-size: inherit;
+  /* Add any other styles you want for the link, e.g., color, text-decoration, etc. */
+}
+
+highlight {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  color: red;
+}
+
+.one {
+  width: 80px;
+  position: relative;
+}
+
+.two {
+  width: 80px;
+  position: absolute;
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+
+.fade {
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
+}
+.imgbadge{
+  max-height: 18px;
+  max-width: 85px;
+  margin: 0px 0px 0px 0px;
+  vertical-align: middle;
+}
+span.highlight {
+  background-color: #ffffd0;
+}
+
+.grid-container {
+  /*columns: 3 150px; */
+  columns: 3 auto;
+  column-gap: 1.5rem;
+  width: 100%;
+  margin: 0 auto;
+  /*padding-left:20px;*/
+}
+.grid-container div {
+  /*width: auto;*/
+  /*width: 150px;*/
+  margin: 0 1.5rem 1.5rem 0;
+  display: inline-block;
+  width: 95%;
+  border: solid 2px black;
+  padding: 5px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+
+  overflow: hidden;
+  display: block;
+  position: relative;
+  text-align: center;
+}
+/*    .grid-container div:hover img {
+  filter: grayscale(0);
+}*/
+.grid-container div:hover {
+  border-color: coral;
+}
+.grid-container div img {
+  /*width: 70%;*/
+  /*filter: grayscale(100%);*/
+  border-radius: 5px;
+  transition: all 0.25s ease-in-out;
+
+  margin: auto;
+}
+.grid-container div p {
+  margin: 5px 0;
+  padding: 0;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Lato';
+  font-size:14px;
+}
+
+.special-link {
+  font-size: 22px; /* Set this to your desired font size */
+  /* Add any other styles you want for this specific link */
+}
+
+/*  News styles
+--------------------------------------*/
+
+div.news {
+  width: 100%;
+  max-height: 150px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-top: 0px;
+}
+
+ul.news li { 
+  margin-bottom: 5px; 
+}
+
+/* Hide the default scrollbar */
+div.news::-webkit-scrollbar {
+  width: 6px; /* Set the width of the scrollbar */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+div.news::-webkit-scrollbar-thumb {
+  background: transparent;
+}
+
+/* On hover, style the scrollbar handle */
+div.news:hover::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 6px; /* Rounded corners of the handle */
+}
+
+div.news::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+div.news:hover::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Background color when hovered */
+}
+
+
+.inlineList {
+    list-style-type: none; /* Remove default list bullets */
+    display: inline; /* Display list items inline */
+    padding: 0px; /* Remove default padding */
+    margin-left: 20px;
+}
+
+.inlineList li {
+    display: inline; /* Display list items inline */
+    margin-right: 5px; /* Add some space between items */
+}
+
+.full-list {
+    list-style-type: none; /* Remove default list bullets */
+    display: inline; /* Display list items inline */
+    padding: 0px; /* Remove default padding */
+    margin-left: 0px;
+}
+
+.full-list li {
+    display: inline; /* Display list items inline */
+    margin-bottom: 3px;
+}
+
+.full-list-item {
+    margin-bottom: 5px; /* Add some space between items */
+    line-height: 1.5;
+}
+
+.full-list-itemhl {
+    margin-bottom: 5px; /* Add some space between items */
+    line-height: 1.5;
+    background-color: rgba(255, 255, 0, 0.197);
+}
+
+
