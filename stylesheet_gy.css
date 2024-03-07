@@ -81,12 +81,12 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px
+  font-size: 14px
 }
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 heading {
@@ -106,8 +106,8 @@ heading2 {
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
-  font-weight: 800
+  font-size: 14px;
+  font-weight: 700
 }
 
 name {
@@ -122,7 +122,7 @@ name a {
 
 highlight {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: red;
 }
 
@@ -201,7 +201,7 @@ span.highlight {
   text-align: center;
   font-style: italic;
   font-family: 'Lato';
-  font-size:16px;
+  font-size:14px;
 }
 
 .special-link {
