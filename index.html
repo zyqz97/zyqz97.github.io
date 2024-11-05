@@ -23,7 +23,7 @@
   <body>
     <table cellspacing="0" cellpadding="0" style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
         <tr style="padding:0px">
-          <td style="padding:0px">
+          <td style="padding:px">
             <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
                 <tr style="padding:0px">
                   <td style="padding:2.5%;width:63%;vertical-align:middle">
@@ -60,11 +60,6 @@
               
               <!-- ---------------------- Highlight------------------------ -->
               <table width="92%" align="left" border="0" cellspacing="0" style="padding-left:20px;padding-bottom:10px"><tbody>
-                  <!-- <tr> <td style=padding:00px;width:90%;vertical-align:middle;padding-left:00px>
-                      <font color="red"><strong><highlight>&#9733; 11111111111.</highlight></strong></font>
-                    </br> </br> </br>
-                    </td> </tr> -->
-
                   <tr> <td>
                       <heading>News</heading><br>
                     </td> </tr>
@@ -134,202 +129,27 @@
 
               <!-- ---------------------- Publications------------------------ -->
 
-              <table width="100%" align="center" border="0" cellspacing="0" style="padding-top:40px;padding-left:20px;padding-bottom:10px"><tbody>
+              <table width="100%" align="center" border="0" cellspacing="0" style="padding-top:40px;padding-left:20px;padding-bottom:10px">
+                <tbody>
                 <tr> <td>
-                        <!-- <heading>Selected Publications [<a href="./pub.html">More</a>]</heading>  <br> -->
-                        <heading>Publications</heading>  
+                        <!-- <heading>Publications</heading>   -->
+                        <heading>Publications 
+                          [<a href="#" class="publicationFilter" data-filter="selected">Selected</a>] 
+                          [<a href="#" class="publicationFilter" data-filter="all">All</a>]
+                        </heading> 
                         <br>
                         (<strong><sup>#</sup></strong> corresponding author, <strong>*</strong> equal contribution)
                   </td> </tr>
-                </tbody> </table>
+                </tbody> 
+              </table>
 
               
-              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-                  <tr onmouseout="aeriallift_stop()" onmouseover="aeriallift_start()" >
-                    
-                    <td style="padding:20px;width:20%;vertical-align:middle;padding-top:5px;padding-bottom:10px">
-                    <!-- <td style="padding:20px;width:20%;vertical-align:middle;"> -->
-                      <div class="one">
-                        <div class="two" id='aeriallift_image'>
-                            <img src='data/cvpr24_aeriallift.gif' width="120", height="90">
-                        </div>
-                        <img src='data/cvpr24_aeriallift.jpg' width="120", height="90">
-                      </div>
-                      <script type="text/javascript">
-                        function aeriallift_start() { document.getElementById('aeriallift_image').style.opacity = "1"; }
-                        function aeriallift_stop() { document.getElementById('aeriallift_image').style.opacity = "0"; }
-                        aeriallift_stop()
-                      </script>
-                    </td>
-                    <td style="padding:00px;width:80%;vertical-align:middle;padding-top:5px;padding-bottom:10px;">
-                      <a href="https://zyqz97.github.io/Aerial_Lifting/">
-                      <papertitle>Aerial Lifting: Neural Urban Semantic and Building Instance Lifting from Aerial Imagery</papertitle>
-                      </a>
-                      <br>
-                      <strong>Yuqi Zhang</strong>, Guanying Chen<sup>#</sup>, Jiaxing Chen, Shuguang Cui
-                      <br>
-                      IEEE/CVF Conference on Computer Vision and Pattern Recognition (<em>CVPR</em>), 2024.
-                      <br>
-                      <a href="https://arxiv.org/abs/2403.11812">arXiv</a> |
-                      <a href="https://zyqz97.github.io/Aerial_Lifting/">Project Page</a> |
-                      <a href="https://cvpr.thecvf.com/media/PosterPDFs/CVPR%202024/29765.png?t=1711686000.8237486">Poster</a> |
-                      <a href="https://cvpr.thecvf.com/virtual/2024/poster/29765">More</a> |
-                      <a href="https://github.com/zyqz97/Aerial_lifting">Code</a>
-                      <a href="https://github.com/zyqz97/Aerial_lifting" target="_blank"><img class="imgbadge" src="https://img.shields.io/github/stars/zyqz97/Aerial_lifting?style=social"></a>
-                      <p></p>
-                    </td>
-                  </tr>
-                  
-
-                  <tr onmouseout="gpnerf_stop()" onmouseover="gpnerf_start()" >
-                    <td style="padding:20px;width:20%;vertical-align:middle;padding-top:5px;padding-bottom:10px">
-                    <!-- <td style="padding:20px;width:20%;vertical-align:middle;"> -->
-                      <div class="one">
-                        <div class="two" id='gpnerf_image'>
-                            <img src='data/gp_nerf_after.gif' width="120", height="90">
-                        </div>
-                        <img src='data/gp_nerf_before.jpg' width="120", height="90">
-                      </div>
-                      <script type="text/javascript">
-                        function gpnerf_start() { document.getElementById('gpnerf_image').style.opacity = "1"; }
-                        function gpnerf_stop() { document.getElementById('gpnerf_image').style.opacity = "0"; }
-                        gpnerf_stop()
-                      </script>
-                    </td>
-                    <td style="padding:00px;width:80%;vertical-align:middle;padding-top:5px;padding-bottom:10px;">
-                    <!-- <td style="padding:00px;width:80%;vertical-align:middle;"> -->
-                      <a href="https://zyqz97.github.io/GP_NeRF/">
-                      <papertitle>Efficient Large-scale Scene Representation with a Hybrid of High-resolution Grid and Plane Features</papertitle>
-                      </a>
-                      <br>
-                      <strong>Yuqi Zhang</strong>, Guanying Chen<sup>#</sup>, Shuguang Cui
-                      <br>
-                      Pattern Recognition (PR), 2024.
-                      <br>
-                      <a href="https://arxiv.org/abs/2303.03003v2">arXiv</a> |
-                      <a href="https://zyqz97.github.io/GP_NeRF/">Project Page</a> |
-                      <a href="https://github.com/zyqz97/GP-NeRF">Code</a> 
-                      <a href="https://github.com/zyqz97/GP-NeRF" target="_blank"><img class="imgbadge" src="https://img.shields.io/github/stars/zyqz97/GP-NeRF?style=social"></a>
-                      <p></p>
-                    </td>
-                  </tr>
-
-
-
-                  <tr onmouseout="eanet_stop()" onmouseover="eanet_start()" >
-                    <td style="padding:20px;width:20%;vertical-align:middle;padding-top:5px;padding-bottom:10px">
-                    <!-- <td style="padding:20px;width:20%;vertical-align:middle;"> -->
-                      <div class="one">
-                        <div class="two" id='eanet_image'>
-                            <img src='data/2022eanet_after.png' width="120", height="90">
-                        </div>
-                        <img src='data/2022eanet.png' width="120", height="90">
-                      </div>
-                      <script type="text/javascript">
-                        function eanet_start() { document.getElementById('eanet_image').style.opacity = "1"; }
-                        function eanet_stop() { document.getElementById('eanet_image').style.opacity = "0"; }
-                        eanet_stop()
-                      </script>
-                    </td>
-                    <td style="padding:00px;width:80%;vertical-align:middle;padding-top:5px;padding-bottom:10px;">
-                    <!-- <td style="padding:00px;width:80%;vertical-align:middle;"> -->
-                      <papertitle>EANet: Edge-attention 6D Pose Estimation Network for Texture-less Objects</papertitle>
-                      <br>
-                      <strong>Yuqi Zhang</strong>,
-                      Yuanpeng Liu, Qiaoyun Wu, Jun Zhou, Xiaoxi Gong, Jun Wang<sup>#</sup>
-
-                      <br>
-                      IEEE Transactions on Instrumentation and Measurement (<em>TIM</em>), 2022.
-                      <br>
-                      <a href="https://ieeexplore.ieee.org/abstract/document/9709717">PDF</a>
-                      <p></p>
-                    </td>
-                  </tr>
-                  
-
-
-
-                  <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle;padding-top:5px;padding-bottom:10px">
-                    <!-- <td style="padding:20px;width:20%;vertical-align:middle;"> -->
-                    <img src='data/2024_OEFPFH.png' width="120", height="90">
-                    </td>
-                    <td style="padding:00px;width:80%;vertical-align:middle;padding-top:5px;padding-bottom:10px;">
-                    <!-- <td style="padding:00px;width:80%;vertical-align:middle;"> -->
-                      <papertitle>Efficient Object Recognition under Cluttered Scenes via Descriptor-based Matching and Single Point Voting</papertitle>
-                      <br>
-                      Xiaoge He, Yuanpeng Liu, Jun Zhou, <strong>Yuqi Zhang</strong>, Jun Wang<sup>#</sup>
-                      <br>
-                      Computer Aided Geometric Design, 2024.
-                      <br>
-                      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167839624001286">PDF</a>
-                      <p></p>
-                    </td>
-                  </tr>
-
-
-
-                  <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle;padding-top:5px;padding-bottom:10px">
-                    <!-- <td style="padding:20px;width:20%;vertical-align:middle;"> -->
-                    <img src='data/2022_Measurement.png' width="120", height="90">
-                    </td>
-                    <td style="padding:00px;width:80%;vertical-align:middle;padding-top:5px;padding-bottom:10px;">
-                    <!-- <td style="padding:00px;width:80%;vertical-align:middle;"> -->
-                      <papertitle>A high-accuracy pose measurement system for robotic automated assembly in large-scale space</papertitle>
-                      <br>
-                      Yuanpeng Liu, Jun Zhou, Yida Li, <strong>Yuqi Zhang</strong>, Yongqiang He, Jun Wang<sup>#</sup>
-                      <br>
-                      Measurement, 2022.
-                      <br>
-                      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0263224121013130">PDF</a>
-                      <p></p>
-                    </td>
-                  </tr>
-
-                  
-                  <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle;padding-top:5px;padding-bottom:10px">
-                    <!-- <td style="padding:20px;width:20%;vertical-align:middle;"> -->
-                    <img src='data/2020_3DPVNet.png' width="120", height="90">
-                    </td>
-                    <td style="padding:00px;width:80%;vertical-align:middle;padding-top:5px;padding-bottom:10px;">
-                    <!-- <td style="padding:00px;width:80%;vertical-align:middle;"> -->
-                      <papertitle>3DPVNet: Patch-level 3D Hough Voting Network for 6D Pose Estimation</papertitle>
-                      <br>
-                      Yuanpeng Liu, Jun Zhou, <strong>Yuqi Zhang</strong>, Chao Ding, Jun Wang<sup>#</sup>
-                      <br>
-                      arXiv preprint, 2020.
-                      <br>
-                      <a href="https://arxiv.org/pdf/2009.06887">PDF</a>
-                      <p></p>
-                    </td>
-                  </tr>
-
-
-
-                  <tr>
-                    <td style="padding:20px;width:20%;vertical-align:middle;padding-top:5px;padding-bottom:10px">
-                    <!-- <td style="padding:20px;width:20%;vertical-align:middle;"> -->
-                    <img src='data/2020_bold3d.png' width="120", height="90">
-                    </td>
-                    <td style="padding:00px;width:80%;vertical-align:middle;padding-top:5px;padding-bottom:10px;">
-                    <!-- <td style="padding:00px;width:80%;vertical-align:middle;"> -->
-                      <papertitle>BOLD3D: A 3D BOLD descriptor for 6Dof pose estimation</papertitle>
-                      <br>
-                      Jun Zhou, Yuanpeng Liu, Jinshan Liu, Qian Xie, <strong>Yuqi Zhang</strong>, Xusheng Zhu, Xiao Ding
-                      <br>
-                      Computers & Graphics, 2020.
-                      <br>
-                      <a href="https://www.sciencedirect.com/science/article/abs/pii/S0097849320300595">PDF</a>
-                      <p></p>
-                    </td>
-                  </tr>
-
-
-                
+              <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                <tbody id='publications'>
+                  <!-- Dynamic publication entries will be added here -->
                 </tbody>
               </table>
+
 
 
               <!-- ---------------------- Professional Services -------------------------->
@@ -392,9 +212,333 @@
                       <p style="text-align:right;font-size:small;"> Website adapted from <a href="https://guanyingc.github.io/">Guanying Chen</a> </p>
                     </td> </tr>
                 </tbody> </table>
+
           </td>
         </tr>
     </table>
+
+ 
+  <!-- Define JavaScript function to generate publication entry -->
+  <script>
+
+    const authorInfo = {
+            // "Yuqi Zhang": { homepage: "https://zyqz97.github.io/" },
+            "Shuguang Cui": {homepage: "https://scholar.google.com.hk/citations?user=1o_qvR0AAAAJ&hl=en" },
+            "Guanying Chen": {homepage: "https://guanyingc.github.io/"},
+            "Jun Wang": {homepage: "http://faculty.nuaa.edu.cn/wj8/en/lwcg/53019/list/index.htm"},
+            "Jun Zhou": {homepage: "https://scholar.google.com.hk/citations?user=pEgMa-UAAAAJ&hl=zh-CN"},
+            "Qian Xie": {homepage: "https://nuaaxq.github.io/personal_website/"},
+            
+            "": {homepage: ""},
+        };
+
+    const allPublications = [
+        {
+            imageSrcBefore: "data/cvpr24_aeriallift.jpg",
+            imageSrcAfter: "data/cvpr24_aeriallift.gif",
+            title: "Aerial Lifting: Neural Urban Semantic and Building Instance Lifting from Aerial Imagery",
+            authors: [
+                    "<strong>Yuqi Zhang</strong>", 
+                    "Guanying Chen#", 
+                    "Jiaxing Chen", 
+                    "Shuguang Cui"
+                ],
+            venue: `IEEE/CVF Conference on Computer Vision and Pattern Recognition (<em>CVPR</em>), 2024`,
+            links: `
+                  <a href="https://arxiv.org/abs/2403.11812">arXiv</a> |
+                  <a href="https://zyqz97.github.io/Aerial_Lifting/">Project Page</a> |
+                  <a href="https://cvpr.thecvf.com/media/PosterPDFs/CVPR%202024/29765.png?t=1711686000.8237486">Poster</a> |
+                  <a href="https://github.com/zyqz97/Aerial_lifting">Code</a>
+                  <a href="https://github.com/zyqz97/Aerial_lifting" target="_blank"><img class="imgbadge" src="https://img.shields.io/github/stars/zyqz97/Aerial_lifting?style=social"></a> |
+                  <a href="https://cvpr.thecvf.com/virtual/2024/poster/29765">More</a>
+                    `,
+            selected: true,
+            papertype: 'Conference Proceedings',
+            year: '2024',
+        },
+        {
+            imageSrcBefore: "data/gp_nerf_before.jpg",
+            imageSrcAfter: "data/gp_nerf_after.gif",
+            title: "Efficient Large-scale Scene Representation with a Hybrid of High-resolution Grid and Plane Features",
+            authors: [
+                    "<strong>Yuqi Zhang</strong>",
+                    "Guanying Chen#",
+                    "Shuguang Cui"
+                    ],
+            venue: "Pattern Recognition (PR), 2024",
+            links: `
+                    <a href='https://arxiv.org/abs/2303.03003v2'>arXiv</a> |
+                    <a href='https://zyqz97.github.io/GP_NeRF/'>Project Page</a> |
+                    <a href='https://github.com/zyqz97/GP-NeRF'>Code</a> 
+                    <a href="https://github.com/zyqz97/GP-NeRF" target="_blank"><img class="imgbadge" src="https://img.shields.io/github/stars/zyqz97/GP-NeRF?style=social"></a>
+                    `,
+            papertype: 'Academic Journals',
+            selected: true,
+            year: '2024',
+        },
+        {
+            imageSrcBefore: "data/2022eanet.png",
+            imageSrcAfter: "data/2022eanet_after.png",
+            title: "EANet: Edge-attention 6D Pose Estimation Network for Texture-less Objects",
+            authors: [
+                    "<strong>Yuqi Zhang</strong>",
+                    "Yuanpeng Liu", "Qiaoyun Wu", "Jun Zhou", "Xiaoxi Gong", "Jun Wang#",
+                    ],
+            venue: "IEEE Transactions on Instrumentation and Measurement (TIM), 2022",
+            links: `
+                    <a href="https://ieeexplore.ieee.org/abstract/document/9709717">PDF</a>
+                    `,
+            papertype: 'Academic Journals',
+            selected: true,
+            year: '2022',
+        },
+        {
+            imageSrcBefore: "data/2024_OEFPFH.png",
+            imageSrcAfter: "data/2024_OEFPFH.png",
+            title: "Efficient Object Recognition under Cluttered Scenes via Descriptor-based Matching and Single Point Voting",
+            authors: [
+                    "Xiaoge He",
+                    "Yuanpeng Liu", 
+                    "Jun Zhou", 
+                    "<strong>Yuqi Zhang</strong>", 
+                    "Jun Wang#"
+                    ],
+            venue: "Computer Aided Geometric Design, 2024",
+            links: `
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0167839624001286">PDF</a>
+                    `,
+            papertype: 'Academic Journals',
+            // selected: true,
+            year: '2024',
+        },
+        {
+            imageSrcBefore: "data/2022_Measurement.png",
+            imageSrcAfter: "data/2022_Measurement.png",
+            title: "A high-accuracy pose measurement system for robotic automated assembly in large-scale space",
+            authors: [
+                    "Yuanpeng Liu", 
+                    "Jun Zhou", 
+                    "Yida Li", 
+                    "<strong>Yuqi Zhang</strong>", 
+                    "Yongqiang He", 
+                    "Jun Wang#"
+                    ],
+            venue: "Measurement, 2022",
+            links: `
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0263224121013130">PDF</a>
+                    `,
+            papertype: 'Academic Journals',
+            // selected: true,
+            year: '2022',
+        },
+        {
+            imageSrcBefore: "data/2020_3DPVNet.png",
+            imageSrcAfter: "data/2020_3DPVNet.png",
+            title: "3DPVNet: Patch-level 3D Hough Voting Network for 6D Pose Estimation",
+            authors: [
+                    "Yuanpeng Liu", 
+                    "Jun Zhou", 
+                    "<strong>Yuqi Zhang</strong>",
+                    "Chao Ding", 
+                    "Jun Wang#",
+                    ],
+            venue: "arXiv preprint, 2020",
+            links: `
+                    <a href="https://arxiv.org/pdf/2009.06887">PDF</a>
+                    `,
+            papertype: 'Preprints',
+            // selected: true,
+            year: '2020',
+        },
+        {
+            imageSrcBefore: "data/2020_bold3d.png",
+            imageSrcAfter: "data/2020_bold3d.png",
+            title: "BOLD3D: A 3D BOLD descriptor for 6Dof pose estimation",
+            authors: [
+                    "Jun Zhou",
+                    "Yuanpeng Liu", 
+                    "Jinshan Liu", 
+                    "Qian Xie", 
+                    "<strong>Yuqi Zhang</strong>", 
+                    "Xusheng Zhu", 
+                    "Xiao Ding"
+                    ],
+            venue: "Computers & Graphics, 2020",
+            links: `
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S0097849320300595">PDF</a>
+                    `,
+            papertype: 'Conference Proceedings',
+            // selected: true,
+            year: '2020',
+        },
+        // Add more publications as needed
+        // {
+        //     imageSrcBefore: "data/gp_nerf_before.jpg",
+        //     imageSrcAfter: "data/gp_nerf_after.gif",
+        //     title: "",
+        //     authors: [
+        //             "<strong>Yuqi Zhang</strong>",
+        //             "Guanying Chen#",
+        //             "Shuguang Cui"
+        //             ],
+        //     venue: "arXiv preprint, 2023",
+        //     links: `
+        //             <a href='https://arxiv.org/abs/2303.03003v2'>arXiv</a> |
+        //             <a href='https://zyqz97.github.io/GP_NeRF/'>Project Page</a> |
+        //             <a href='https://github.com/zyqz97/GP-NeRF'>Code</a>
+        //             `,
+        //     papertype: 'Preprints', // 'Academic Journals'    'Conference Proceedings'  
+        //     selected: true,
+        //     year: '2023',
+        // },
+    ];
+
+    // Define object to store author information
+    function generatePublicationEntry(imageSrcBefore, imageSrcAfter, title, authors, venue, links) {
+        // Function to preprocess author IDs
+        function preprocessAuthorId(authorId) {
+            // Remove trailing '*' or '#' symbols
+            return authorId.replace(/[#*]$/, '');
+        }
+        // Function to generate author links
+        function generateAuthorLinks(authors) {
+            return authors.map(authorId => {
+                const processedAuthorId = preprocessAuthorId(authorId);
+                const author = authorInfo[processedAuthorId];
+                if (author && author.homepage) {
+                    return `<a href="${author.homepage}">${authorId}</a>`;
+                } else {
+                    return authorId;
+                }
+            }).join(", ");
+        }
+
+        return `
+            <tr onmouseout="toggleOpacity('${title}', false)" onmouseover="toggleOpacity('${title}', true)">
+                <td style="padding:20px;width:20%;vertical-align:middle;padding-top:5px;padding-bottom:20px">
+                    <div class="one">
+                        <div class="two" id="${title}_image">
+                            <img src="${imageSrcAfter}" width="120", height="90" style="opacity: 0;">
+                        </div>
+                        <img src="${imageSrcBefore}" width="120", height="90">
+                    </div>
+                </td>
+                <td style="padding:00px;width:80%;vertical-align:middle;padding-top:5px;padding-bottom:20px;">
+                    <papertitle>${title}</papertitle>
+                    <br>
+                    ${generateAuthorLinks(authors)}
+                    <br>
+                    ${venue}
+                    <br>
+                    ${links}
+                </td>
+            </tr>
+        `;
+    }
+
+    // Add a function to toggle opacity
+    function toggleOpacity(id, show) {
+        const element = document.getElementById(id + "_image").querySelector("img");
+        if (show) {
+            element.style.opacity = "1";
+        } else {
+            element.style.opacity = "0";
+        }
+    }
+
+    // Function to populate publications
+    function populatePublications(publications) {
+        const publicationsContainer = document.getElementById('publications');
+        publicationsContainer.innerHTML = ''; // Clear existing content
+
+        // Check if the "Selected" button is activated
+        const selectedButtonActive = document.querySelector('.publicationFilter[data-filter="selected"]').classList.contains('active');
+
+        if (selectedButtonActive) {
+            // If "Selected" button is active, display selected publications without grouping
+            publications.forEach(publication => {
+                const publicationEntry = generatePublicationEntry(
+                    publication.imageSrcBefore,
+                    publication.imageSrcAfter,
+                    publication.title,
+                    publication.authors,
+                    publication.venue,
+                    publication.links,
+                );
+                publicationsContainer.innerHTML += publicationEntry;
+            });
+        } else {
+            const groupedPublications = {};
+            publications.forEach(publication => {
+                if (!groupedPublications[publication.year]) {
+                    groupedPublications[publication.year] = [];
+                }
+                groupedPublications[publication.year].push(publication);
+            });
+
+            // Add publications grouped by research direction
+                <!--Object.keys(groupedPublications).forEach(direction => {
+                    // Add heading for each group
+                    -->
+            Object.keys(groupedPublications)
+                .sort((a, b) => b - a) // Sort keys in descending order
+                .forEach(direction => {
+                const headingHTML = `
+                    <tr>
+                        <td colspan="2" style="padding-top:05px;padding-left:20px;padding-bottom:0px">
+                            <heading2>${direction}</heading2>
+                        </td>
+                    </tr>
+                `;
+                publicationsContainer.innerHTML += headingHTML;
+
+                // Add publications under each research direction
+                groupedPublications[direction].forEach(publication => {
+                    const publicationEntry = generatePublicationEntry(
+                        publication.imageSrcBefore,
+                        publication.imageSrcAfter,
+                        publication.title,
+                        publication.authors,
+                        publication.venue,
+                        publication.links,
+                    );
+                    publicationsContainer.innerHTML += publicationEntry;
+                });
+            });
+        }
+    }
+
+    // Call the function to populate selected publications by default
+    document.querySelector('.publicationFilter[data-filter="selected"]').classList.add('active');
+    document.querySelector('.publicationFilter[data-filter="all"]').classList.remove('active');
+    populatePublications(allPublications.filter(publication => publication.selected));
+
+    // Event listener for publication filter buttons
+
+    document.querySelectorAll('.publicationFilter').forEach(link => {
+        link.addEventListener('click', function (event) {
+            event.preventDefault(); // Prevent default behavior of the link
+
+            const filter = event.target.getAttribute('data-filter');
+            if (filter === 'selected') {
+                // Activate the "Selected" button
+                document.querySelector('.publicationFilter[data-filter="selected"]').classList.add('active');
+                // Deactivate the "All" button
+                document.querySelector('.publicationFilter[data-filter="all"]').classList.remove('active');
+                // Populate with selected publications without grouping by research direction
+                populatePublications(allPublications.filter(publication => publication.selected));
+            } else if (filter === 'all') {
+                // Activate the "All" button
+                document.querySelector('.publicationFilter[data-filter="all"]').classList.add('active');
+                // Deactivate the "Selected" button
+                document.querySelector('.publicationFilter[data-filter="selected"]').classList.remove('active');
+                // Populate with all publications grouped by research direction
+                populatePublications(allPublications);
+            }
+        });
+    });
+
+  </script>
   </body>
 
 </html>
