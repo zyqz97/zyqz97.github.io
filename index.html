@@ -109,18 +109,28 @@
               <table width="100%" align="center" border="0" cellspacing="0" style="padding-top:05px;padding-left:20px;padding-bottom:0px"><tbody>
                   <tr> <td>
                     <div class="grid-container">
+
+                      <div>
+                       <a href="https://fcyycf.github.io/RobustSplat/">
+                            <img src="data/2025_robustsplat.gif" height="120" alt="" />
+                       </a>
+                        <p>[Preprint] RobustSplat: Decoupling Densification and Dynamics for Transient-Free 3DGS</p>
+                      </div>
+
                       <div>
                         <a href="https://zyqz97.github.io/Aerial_Lifting/">
                             <img src="data/cvpr24_aeriallift_highlight.gif" height="120" alt="" />
                         </a>
                         <p>[CVPR'24] Aerial Lifting: Neural Aerial Urban Semantic and Building Instance Lifting from Aerial Imagery</p>
+                        <!-- <p>[CVPR'24] Aerial Lifting: Neural Aerial Urban Semantic and Building Instance Lifting</p> -->
                       </div>
                       
                       <div>
                        <a href="https://zyqz97.github.io/GP_NeRF/">
                             <img src="data/gp_nerf_after.gif" height="120" alt="" />
                        </a>
-                        <p>Efficient Large-scale Scene Representation with a Hybrid of High-resolution Grid and Plane Features</p>
+                        <!-- <p>[PR'25] GP-NeRF: Efficient Large-scale Scene Representation with a Hybrid of High-resolution Grid and Plane Features</p> -->
+                        <p>[PR'25] GP-NeRF: Large-scale Scene Representation with a Hybrid of Grid and Plane Features</p>
                       </div>
                     </div>
                   </td> </tr>
@@ -224,17 +234,51 @@
   <script>
 
     const authorInfo = {
-            // "Yuqi Zhang": { homepage: "https://zyqz97.github.io/" },
-            "Shuguang Cui": {homepage: "https://scholar.google.com.hk/citations?user=1o_qvR0AAAAJ&hl=en" },
-            "Guanying Chen": {homepage: "https://guanyingc.github.io/"},
             "Jun Wang": {homepage: "http://faculty.nuaa.edu.cn/wj8/en/lwcg/53019/list/index.htm"},
-            "Jun Zhou": {homepage: "https://scholar.google.com.hk/citations?user=pEgMa-UAAAAJ&hl=zh-CN"},
             "Qian Xie": {homepage: "https://nuaaxq.github.io/personal_website/"},
+            "Jun Zhou": {homepage: "https://scholar.google.com.hk/citations?user=pEgMa-UAAAAJ&hl=zh-CN"},
+            // "Yuqi Zhang": { homepage: "https://zyqz97.github.io/" },
+            "Guanying Chen": {homepage: "https://guanyingc.github.io/"},
+            "Shuguang Cui": {homepage: "https://scholar.google.com.hk/citations?user=1o_qvR0AAAAJ&hl=en" },
+            "Chuan Huang": {homepage: "https://myweb.cuhk.edu.cn/huangchuan"},
+            //
+            "Xiaochun Cao": {homepage: "https://scst.sysu.edu.cn/members/caoxiaochun.htm"},
+            "Yuan Xiong": {homepage: "https://scholar.google.com/citations?user=DWe0-5QAAAAJ&hl=en"},
+            //
+            "Chuanyu Fu": {homepage: "https://github.com/fcyycf"},
+            "Kunbin Yao": {homepage: "https://kbyao357.github.io/"},
             
             "": {homepage: ""},
         };
 
     const allPublications = [
+      {
+            imageSrcBefore: "data/2025_robustsplat.jpg",
+            imageSrcAfter: "data/2025_robustsplat.gif",
+            title: "RobustSplat: Decoupling Densification and Dynamics for Transient-Free 3DGS",
+            authors: [
+                    "Chuanyu Fu",
+                    "<strong>Yuqi Zhang</strong>", 
+                    "Kunbin Yao",
+                    "Guanying Chen#", 
+                    "Yuan Xiong",
+                    "Chuan Huang",
+                    "Shuguang Cui",
+                    "Xiaochun Cao", 
+                ],
+            venue: `arXiv preprint, 2025`,
+            links: `
+                  <a href="">arXiv</a> |
+                  <a href="https://fcyycf.github.io/RobustSplat/">Project Page</a> |
+                  <a href="https://github.com/fcyycf/RobustSplat/tree/main">Code</a>
+                  <a href="https://github.com/fcyycf/RobustSplat/tree/main" target="_blank"><img class="imgbadge" src="https://img.shields.io/github/stars/fcyycf/RobustSplat?style=social"></a>
+                    `,
+            selected: true,
+            // papertype: 'Conference Proceedings',
+            papertype: 'Preprints',
+            year: '2025',
+        },
+
         {
             imageSrcBefore: "data/cvpr24_aeriallift.jpg",
             imageSrcAfter: "data/cvpr24_aeriallift.gif",
@@ -261,7 +305,7 @@
         {
             imageSrcBefore: "data/gp_nerf_before.jpg",
             imageSrcAfter: "data/gp_nerf_after.gif",
-            title: "Efficient Large-scale Scene Representation with a Hybrid of High-resolution Grid and Plane Features",
+            title: "GP-NeRF: Efficient Large-scale Scene Representation with a Hybrid of High-resolution Grid and Plane Features",
             authors: [
                     "<strong>Yuqi Zhang</strong>",
                     "Guanying Chen#",
