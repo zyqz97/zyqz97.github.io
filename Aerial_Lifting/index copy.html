@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Aerial Lifting</title>
+
+<!--     <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
+  <!-- <link rel="icon" type="image/png" href="img/seal_icon.png"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>Aerial Lifting</b>: <br>Neural Urban Semantic and Building Instance Lifting from Aerial Imagery</br> 
+                <small>
+                    CVPR 2024
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://zyqz97.github.io/">
+                          Yuqi Zhang
+                        </a><sup>1,2</sup>
+
+                    </li>
+                    <li>
+                        <a href="https://guanyingc.github.io/">
+                            Guanying Chen
+                        </a><sup>1,3 #</sup>
+                    </li>
+                    <li>Jiaxing Chen
+                        <sup>1,3</sup></li>
+                    <li>
+                        <a href="https://sse.cuhk.edu.cn/en/faculty/cuishuguang">
+                          Shuguang Cui
+                        </a><sup>2,1</sup>
+                    </li>
+                    <br>
+                    <li>
+                        <small><sup>1</sup>FNii, CUHKSZ</small>
+                    </li>
+                    <li>
+                        <small><sup>2</sup>SSE, CUHKSZ</small>
+                    </li>
+                    <li>
+                        <small><sup>3</sup>Sun Yat-sen University</small>
+                    </li>
+                    <br>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="row">
+                <div class="col-md-4 col-md-offset-4 text-center">
+                    <ul class="nav nav-pills nav-justified">
+                        <li>
+                            <a href="https://arxiv.org/abs/2403.11812">
+                            <image src="icons/paper.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://youtu.be/w_0FZJVOmfQ">
+                            <image src="icons/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/zyqz97/Aerial_lifting">
+                            <image src="icons/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <image src="icons/paper.png" height="60px">
+                                <h4><strong>Supplementary</strong></h4>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <!-- <image src="img/teaser.png" class="img-responsive" alt="overview"><br> -->
+                <p class="text-justify">
+                    We present a neural radiance field method for urban-scale semantic and building-level instance segmentation from aerial images by lifting noisy 2D labels to 3D. This is a challenging problem due to two primary reasons. Firstly, objects in urban aerial images exhibit substantial variations in size, including buildings, cars, and roads, which pose a significant challenge for accurate 2D segmentation. Secondly, the 2D labels generated by existing segmentation methods suffer from the multi-view inconsistency problem, especially in the case of aerial images, where each image captures only a small portion of the entire scene. To overcome these limitations, we first introduce a scale-adaptive semantic label fusion strategy that enhances the segmentation of objects of varying sizes by combining labels predicted from different altitudes, harnessing the novel-view synthesis capabilities of NeRF. We then introduce a novel cross-view instance label grouping strategy based on the 3D scene representation to mitigate the multi-view inconsistency problem in the 2D instance labels. Furthermore, we exploit multi-view reconstructed depth priors to improve the geometric quality of the reconstructed radiance field, resulting in enhanced segmentation results. Experiments on multiple real-world urban-scale datasets demonstrate that our approach outperforms existing methods, highlighting its effectiveness.
+                </p>
+            </div>
+        </div>
+
+        
+
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Methodology
+                </h3>
+                <image src="./img/pipeline.png" class="img-responsive" alt="method"><br>
+                <p class="text-justify">
+                    We present a neural radiance field (NeRF) method for urban-scale semantic and building-level instance segmentation from aerial images by lifting noisy 2D labels to 3D.
+                    For semantic segmentation, we adopt a scale-adaptive semantic label fusion strategy to fuse the semantic labels from different altitudes using images rendered by NeRF, mitigating the ambiguities of the 2D semantic labels.
+                    For instance segmentation, we propose a cross-view instance label grouping strategy to guide the training of instance field. 
+                    In addition, depth-prior from Multi-view Stereo (MVS) is introduced to enhance the geometry reconstruction, leading to more accurate semantic learning.
+                </p><br>
+                
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Video
+                </h3>
+                <div class="text-center">
+                    <div style="position:relative;padding-top:56.25%;">
+                        <iframe src="https://www.youtube.com/embed/w_0FZJVOmfQ" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Acknowledgements
+                </h3>
+                <p class="text-justify">
+                The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
