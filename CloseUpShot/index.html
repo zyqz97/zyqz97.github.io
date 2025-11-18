@@ -62,7 +62,7 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://https://zyqz97.github.io/GP_NeRF/">
+          <a class="navbar-item" href="https://zyqz97.github.io/GP_NeRF/">
             GP-NeRF
           </a>
           <a class="navbar-item" href="https://zyqz97.github.io/Aerial_Lifting/">
@@ -114,12 +114,22 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://arxiv.org/abs/commingsoon"
+                <a href="https://arxiv.org/abs/2511.13121"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
                   </span>
                   <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Supp Link. -->
+              <span class="link-block">
+                <a href="https://github.com/zyqz97/zyqz97.github.io/supp/2025_CloseUpShot_supplementary.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Supp</span>
                 </a>
               </span>
               <!-- Video Link. -->
@@ -178,10 +188,19 @@
             Specifically, we observe that pixel-warping conditioning suffers from severe sparsity and background leakage in close-up settings.
             To address this, we propose hierarchical warping and occlusion-aware noise suppression, enhancing the quality and completeness of the conditioning images for the video diffusion model.
             Furthermore, we introduce global structure guidance, which leverages a dense fused point cloud to provide consistent geometric context to the diffusion process, to compensate for the lack of globally consistent 3D constraints in sparse conditioning inputs.
-            Extensive experiments on multiple datasets demonstrate that our method outperforms existing approaches, especially in close-up novel view synthesis, clearly validating the effectiveness of our design..
+            Extensive experiments on multiple datasets demonstrate that our method outperforms existing approaches, especially in close-up novel view synthesis, clearly validating the effectiveness of our design.
             </p>
-          
     <!--/ Abstract. -->
+    <!-- methodology -->
+    <h3 class="title is-3">Methodology</h3>
+      <img src="static/images/pipeline.png">
+      Overview. Our pipeline takes two sparse input views and is capable of synthesizing fine-grained novel views under close-up settings using a point-conditioned video diffusion model.
+      First, a pretrained estimator is applied to obtain depth maps and camera parameters from the input images.
+      Second, we introduce two effective modules, hierarchical warping and cclusion-aware noise suppression, to enhance the sparse and noisy conditioning images, especially in the close-up setting.
+      Third, we perform a multi-view consistency check to construct a global point cloud, which is projected into target views to provide global structure guidance for the denoising U-Net.
+      Finally, the generated novel views, together with the reference inputs, are used to supervise 3DGS for photorealistic and detail-preserving 3D reconstruction.
+    </p>
+    <!-- methodology -->
     <!-- Paper video. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -193,16 +212,6 @@
       </div>
     </div>
     <!--/ Paper video. -->
-    <!-- methodology -->
-    <h3 class="title is-3">Methodology</h3>
-      <img src="static/images/pipeline.png">
-      Overview. Our pipeline takes two sparse input views and is capable of synthesizing fine-grained novel views under close-up settings using a point-conditioned video diffusion model.
-      First, a pretrained estimator is applied to obtain depth maps and camera parameters from the input images.
-      Second, we introduce two effective modules, hierarchical warping and cclusion-aware noise suppression, to enhance the sparse and noisy conditioning images, especially in the close-up setting.
-      Third, we perform a multi-view consistency check to construct a global point cloud, which is projected into target views to provide global structure guidance for the denoising U-Net.
-      Finally, the generated novel views, together with the reference inputs, are used to supervise 3DGS for photorealistic and detail-preserving 3D reconstruction.
-    </p>
-    <!-- methodology -->
     
   </div>
 </section>
